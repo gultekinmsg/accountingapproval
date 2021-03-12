@@ -11,3 +11,20 @@ public class AccountingapprovalApplication {
     }
 
 }
+/*
+
+
+Teknik İsterler:
+1. Proje, Maven kullanılarak derlenmeli ve paket oluşturulmalı.
+
+5. Object Oriented Programming yaklaşımın uygulanmasına dikkat edilmeli
+6. Uygulamanın nasıl çalıştırılacağına dair dokümantasyon yazılmış olmalı
+Yapılması opsiyonel olan, artı puan kazandıracak isterler:
+1. Servislerin docker ile containerized yapılması.
+2. Project içerisinde Postman Collection bulunması.
+3. Curl komutlarının paylaşılması.
+4. Unit Testlerin yazılmış olması.
+
+
+
+ */
