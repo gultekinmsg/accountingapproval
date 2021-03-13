@@ -8,6 +8,7 @@ class AccountingapprovalApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("Context Loaded");
     }
 
 }
