@@ -18,6 +18,5 @@ public class Bill {
     private Integer amount;
     private String productName;
     private String billNo;
-    @Enumerated(EnumType.STRING)
     private BillStatus billStatus;
 }
