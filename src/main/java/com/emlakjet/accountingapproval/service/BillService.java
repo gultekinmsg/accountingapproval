@@ -54,14 +54,14 @@ public class BillService {
         List<Bill> billList = billRepository.findByEmailAndBillStatus(billRequest.getEmail(), BillStatus.APPROVED);
         if (billList.isEmpty() && billAmount <= amountLimit()) {
             return BillStatus.APPROVED;
-        } else if (billAmount >= amountLimit()) {
+        } else if (billAmount > amountLimit()) {
             return BillStatus.DENIED;
         } else {
             Integer totalAmount = billAmount;
             for (Bill amount : billList) {
                 totalAmount += amount.getAmount();
             }
-            if (totalAmount <= amountLimit()) {
+            if (totalAmount + billAmount <= amountLimit()) {
                 return BillStatus.APPROVED;
             } else {
                 return BillStatus.DENIED;
