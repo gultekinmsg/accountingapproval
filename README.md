@@ -3,7 +3,7 @@
 Accounting Approval Status  application for Emlakjet assignment project.    
 Contains REST api's to process bill and get approved and denied bills.
 
-Technologies and Tools Used:
+**Technologies and Tools Used:**
 - Java 11
 - Spring Boot 2.4.3
 - Lombok for lots of useful annotations
@@ -11,7 +11,7 @@ Technologies and Tools Used:
 - Maven for dependency management
 - MySql as database
 
-Requirements:
+**Requirements:**
 - JDK 11
 - Maven
 - Mysql Server
