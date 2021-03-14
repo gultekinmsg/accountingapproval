@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     password: root
-    url: jdbc:mysql://localhost:8080/billDb
+    url: jdbc:mysql://localhost:8080/billdb
     username: root
   jpa:
     hibernate:
