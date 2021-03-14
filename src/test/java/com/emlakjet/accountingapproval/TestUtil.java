@@ -2,12 +2,21 @@ package com.emlakjet.accountingapproval;
 
 import com.emlakjet.accountingapproval.entity.Bill;
 import com.emlakjet.accountingapproval.entity.BillStatus;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Utils {
-    private Utils() {
+public class TestUtil {
+    private TestUtil() {
+    }
+
+    protected static String asJsonString(final Object obj) {
+        try {
+            return new ObjectMapper().writeValueAsString(obj);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     protected static List<Bill> getDbDeniedList() {
