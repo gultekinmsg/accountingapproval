@@ -29,8 +29,11 @@ After successful build, you will find jar file with the path; target/accountinga
 
      java -jar target/accountingapproval-1.0.0-SNAPSHOT.jar  
 
-## Postman Collection Path:
+## Postman Collection:
 
+[Download from here](AccountingBillApprovalStatus.postman_collection.json)
+
+Path:
 
      AccountingBillApprovalStatus.postman_collection.json  
 
