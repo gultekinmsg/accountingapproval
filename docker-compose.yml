@@ -1,0 +1,27 @@
+version: "3.7"
+services:
+  billapp:
+    build: .
+    ports:
+      - 8081:8081
+    networks:
+      - billnet
+    depends_on:
+      - billdb
+  billdb:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 'billdb'
+      MYSQL_USER: 'billusr'
+      MYSQL_PASSWORD: 'billpass'
+      MYSQL_ROOT_PASSWORD: 'rootpass'
+    ports:
+      - 3306:3306
+    volumes:
+      - billdb-data:/var/lib/mysql
+    networks:
+      - billnet
+volumes:
+  billdb-data:
+networks:
+  billnet:

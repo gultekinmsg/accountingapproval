@@ -10,11 +10,14 @@ Contains REST api's to process bill and get approved and denied bills.
 - DevTools for Live Reload
 - Maven for dependency management
 - MySql as database
+- Docker and Docker Compose
 
 **Requirements:**
 - JDK 11
 - Maven
 - Mysql Server
+- Docker
+- Docker Compose
 
 ## Compile and Run:
 Change **application.yml** file(db settings and server port) for your environment first. You can also set maxAmountLimit.
@@ -27,7 +30,19 @@ After successful build, you will find jar file with the path; target/accountinga
 
 ### To run;
 
-     java -jar target/accountingapproval-1.0.0-SNAPSHOT.jar  
+Compile application and create jar file as described at previous step.
+
+Run first time(pulls mysql and builds app docker image):  `docker-compose up -d`
+
+To stop running compose: `docker-compose stop`
+
+To start existing compose: `docker-compose start`
+
+To restart existing compose: `docker-compose restart`
+
+To see logs: `docker-compose logs`
+
+To delete compose(delete with db data): `docker-compose down -v`
 
 ## Postman Collection:
 

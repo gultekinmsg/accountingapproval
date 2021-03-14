@@ -2,9 +2,9 @@ server:
   port: 8081
 spring:
   datasource:
-    password: root
-    url: jdbc:mysql://localhost:8080/billdb
-    username: root
+    username: billusr
+    password: billpass
+    url: jdbc:mysql://billdb:3306/billdb
   jpa:
     hibernate:
       ddl-auto: update
